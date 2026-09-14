@@ -3,7 +3,7 @@
 A responsive and modern landing page for The Metropolitan Museum of Art, built using HTML, BEM methodology, and SCSS. This project focuses on clean layout structure, responsive design across various devices, and automated workflow using build tools.
 
 ## Live Preview
-[View Live Demo](https://ferenssofia.github.io/landing_page/)
+[View Live Demo](https://ferenssofia.npm run buildgithub.io/landing_page/)
 
 ## Design Reference
 - [MET Landing Figma Design](https://www.figma.com/file/lSR1m42L9YwzQwzzxKwHpw/THE-MET)
