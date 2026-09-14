@@ -1,9 +1,8 @@
 .top-bar {
-  padding-block: 24px;
-
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding-block: 24px;
 
   @include on-tablet {
     padding: 64px 72px;
@@ -11,9 +10,9 @@
 
   &__icons {
     display: flex;
+    flex-direction: row;
     gap: 24px;
     align-items: center;
-    flex-direction: row;
   }
 
   &__logo-link {
@@ -21,10 +20,10 @@
   }
 
   & a img {
+    display: block;
     width: 64px;
     height: 46px;
     height: auto;
-    display: block;
 
     @include hover(transform, scale(1.2));
 

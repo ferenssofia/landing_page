@@ -1,10 +1,11 @@
 .menu {
   box-sizing: border-box;
-
   height: 100vh;
-  background-color: #d12d35;
+
   font-weight: 700;
   text-transform: uppercase;
+
+  background-color: #d12d35;
 
   &__top {
     margin-bottom: 32px;
@@ -15,26 +16,31 @@
   }
 
   &_phone-number {
-    color: $main-text-colour;
-    text-decoration: none;
     display: block;
+
+    margin-bottom: 16px;
+
     font-size: 16px;
     line-height: 27px;
-    margin-bottom: 16px;
+    color: $main-text-colour;
+    text-decoration: none;
   }
 
   &_call-to-order {
-    color: $main-text-colour;
-    text-decoration: none;
+    display: block;
+
+    padding-bottom: 7px;
+
     font-size: 12px;
     line-height: 16px;
+    color: $main-text-colour;
+    text-decoration: none;
     letter-spacing: 2px;
-    display: block;
-    padding-bottom: 7px;
+
     transition: transform 0.3s;
     &:hover {
-      border-bottom: 1px solid $main-text-colour;
       width: fit-content;
+      border-bottom: 1px solid $main-text-colour;
     }
   }
 

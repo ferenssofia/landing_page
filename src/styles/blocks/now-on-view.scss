@@ -10,19 +10,21 @@
 }
 
 .now-on-view-button {
-  text-decoration: none;
-  height: 56px;
   grid-column: 1/-1;
-  font-family: Cinzel, serif;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 16px;
-  line-height: 56px;
-  letter-spacing: 0;
-  text-align: center;
   justify-items: center;
-  background-color: #d12d35;
+
+  height: 56px;
+
+  font-family: Cinzel, serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 56px;
   color: #fff;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0;
+
+  background-color: #d12d35;
 
   @include on-tablet {
     grid-column: 2/-2;
@@ -44,6 +46,8 @@
 
   &__link {
     position: relative;
+    overflow: hidden; // Clips zoomed image within container to prevent overlap
+
     &--disapear {
       display: none;
 
@@ -76,18 +80,23 @@
 
   &__photo {
     position: absolute;
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
 
+    // Placed transition on base element so hover-in AND hover-out animate smoothly
+    transition: transform 0.3s ease-in-out;
+
     &:hover {
-      transform: scale(1.1);
-      transition: transform 0.3s;
+      transform: scale(1.04); // Reduced scale to keep zoom clean and prevent overlap
     }
   }
 
   &__title {
     margin: 0;
+
     font-family: Cinzel, serif;
     font-size: 16px;
     line-height: 27px;
@@ -104,3 +113,4 @@
     }
   }
 }
+

@@ -1,56 +1,61 @@
 .icon {
   display: block;
-  height: 24px;
   width: 24px;
+  height: 24px;
   background-size: contain;
 
   @include hover(transform, scale(1.2));
 
   @include on-tablet {
-    height: 32px;
     width: 32px;
+    height: 32px;
   }
 
   &__phone-numbers {
-    align-items: center;
-    display: flex;
     position: relative;
+    display: flex;
+    align-items: center;
   }
 
   &__numbers {
-    text-align: right;
     position: absolute;
-    color: white; /* Колір тексту */
+    right: 45px;
+
     display: none; /* Перетворюємо на Flex-контейнер */
     flex-direction: column; /* Розміщуємо елементи у стовпчик */
-    right: 45px;
+
     width: 200px;
 
+    color: white; /* Колір тексту */
+    text-align: right;
+
     &--title {
+      margin: 0;
+
       font-family: Cinzel, serif;
+      font-size: 16px;
       font-weight: 700;
       font-style: bold;
-      font-size: 16px;
       line-height: 27px;
+      text-transform: uppercase;
       letter-spacing: 0;
       vertical-align: middle;
-      text-transform: uppercase;
-      margin: 0;
     }
 
     &--number {
-      text-decoration: none;
-      color: white;
-      font-family: Cinzel, serif;
-      font-weight: 700;
-      font-style: bold;
-      font-size: 16px;
       margin-top: 0;
       margin-bottom: 8px;
+
+      font-family: Cinzel, serif;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: bold;
       line-height: 27px;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
       letter-spacing: 0;
       vertical-align: middle;
-      text-transform: uppercase;
     }
   }
 
@@ -62,8 +67,8 @@
     background-image: url(../images/Icon-Burger-menu.svg);
 
     &:hover {
-      background-image: url(../images/Icon-Burger-menu-hover.svg);
       transform: scale(1.2);
+      background-image: url(../images/Icon-Burger-menu-hover.svg);
       transition:
         transform 0.3s,
         background-image 0.3s;

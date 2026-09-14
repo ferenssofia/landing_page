@@ -1,23 +1,26 @@
 .section-title {
   margin: 0;
   margin-bottom: 40px;
+
   font-weight: 700;
   font-style: Bold;
+  text-align: center;
 
   // font-size: 32px;
   // line-height: 32px;
   letter-spacing: -1.5px;
-  text-align: center;
 
   &--mini-title {
     display: block;
+
+    max-width: 280px;
+    margin: 0 auto;
+
     font-family: Cinzel, serif;
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 400;
     line-height: 27px;
     letter-spacing: 0;
-    margin: 0 auto;
-    max-width: 280px;
 
     @include on-tablet {
       max-width: 392px;
