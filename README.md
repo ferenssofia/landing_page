@@ -54,7 +54,7 @@ npm start
 
 A live version of the project is available here:
 
-[DEMO LINK]\([https://bodyarespect.github.io/met_landing_page/](https://ferenssofia.github.io/landing_page/)\)
+[DEMO LINK]\[(https://ferenssofia.github.io/landing_page/)\]
 
 ## Technologies Used
 
